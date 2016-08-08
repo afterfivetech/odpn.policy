@@ -33,6 +33,8 @@ setup(name='odpn.policy',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
           'plone.multilingualbehavior',
+          'odpn.theme',
+          'odpn.profile',
           # -*- Extra requirements: -*-
       ],
       extras_require={
