@@ -35,6 +35,10 @@ setup(name='odpn.policy',
 #          'plone.multilingualbehavior',
           'odpn.theme',
           'odpn.profile',
+          'eea.facetednavigation',
+          'plone.formwidget.multifile',
+          'redomino.tokenrole',
+          'collective.quickupload',
           # -*- Extra requirements: -*-
       ],
       extras_require={
