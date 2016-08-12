@@ -36,9 +36,9 @@ setup(name='odpn.policy',
           'odpn.theme',
           'odpn.profile',
           'eea.facetednavigation',
-          'plone.formwidget.multifile',
-          'redomino.tokenrole',
-          'collective.quickupload',
+#          'plone.formwidget.multifile',
+#          'redomino.tokenrole',
+#          'collective.quickupload',
           # -*- Extra requirements: -*-
       ],
       extras_require={
