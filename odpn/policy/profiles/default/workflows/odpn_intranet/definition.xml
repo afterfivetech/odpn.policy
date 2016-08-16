@@ -220,7 +220,7 @@
  </transition>
  <transition transition_id="share_public" title="Share" new_state="shared_public" trigger="USER" before_script="" after_script="">
   <description>Share item with other registered users</description>
-  <action url="%(content_url)s/content_status_modify?workflow_action=share_intranet" category="workflow" icon="">Share: Public</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=share_public" category="workflow" icon="">Share: Public</action>
   <guard>
    <guard-role>Site Administrator</guard-role>
    <guard-role>Manager</guard-role>
