@@ -74,7 +74,7 @@
  </state>
  <state state_id="confirmed" title="Confirmed">
   <description>item at this state is accessible by registered users</description>
-  <exit-transition transition_id="approve"/>
+  <exit-transition transition_id="attend"/>
   <permission-map name="Access contents information" acquired="False">
    <permission-role>Contributor</permission-role>
    <permission-role>Manager</permission-role>
@@ -134,7 +134,7 @@
    <permission-role>Site Administrator</permission-role>
   </permission-map>
  </state>
- <state state_id="approved" title="Approved">
+ <state state_id="attended" title="Attended">
   <description>item at this state is accessible by registered users</description>
   <exit-transition transition_id="retract"/>
   <permission-map name="Access contents information" acquired="False">
@@ -213,9 +213,9 @@
    <guard-role>Manager</guard-role>
   </guard>
  </transition>
- <transition transition_id="approve" title="Approve" new_state="approved" trigger="USER" before_script="" after_script="">
+ <transition transition_id="attend" title="Attend" new_state="attended" trigger="USER" before_script="" after_script="">
   <description>Share item with other registered users</description>
-  <action url="%(content_url)s/content_status_modify?workflow_action=approve" category="workflow" icon="">Approve</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=attend" category="workflow" icon="">Attend</action>
   <guard>
    <guard-role>Site Administrator</guard-role>
    <guard-role>Manager</guard-role>
