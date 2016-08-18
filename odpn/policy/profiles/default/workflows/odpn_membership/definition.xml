@@ -145,7 +145,6 @@
    <permission-role>Reader</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>Site Administrator</permission-role>
-   <permission-role>Anonymous</permission-role>
   </permission-map>
   <permission-map name="Add portal content" acquired="False">
    <permission-role>Contributor</permission-role>
@@ -195,7 +194,6 @@
    <permission-role>Reader</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>Site Administrator</permission-role>
-   <permission-role>Anonymous</permission-role>
   </permission-map>
  </state>
 
@@ -203,7 +201,6 @@
   <description>Content owner retracts shared item to make it private</description>
   <action url="%(content_url)s/content_status_modify?workflow_action=submitted" category="workflow" icon="">Retract</action>
   <guard>
-   <guard-role>Owner</guard-role>
    <guard-role>Site Administrator</guard-role>
    <guard-role>Manager</guard-role>
   </guard>
@@ -212,7 +209,6 @@
   <description>Share item with other registered users</description>
   <action url="%(content_url)s/content_status_modify?workflow_action=confirm" category="workflow" icon="">Confirm</action>
   <guard>
-   <guard-role>Owner</guard-role>
    <guard-role>Site Administrator</guard-role>
    <guard-role>Manager</guard-role>
   </guard>
