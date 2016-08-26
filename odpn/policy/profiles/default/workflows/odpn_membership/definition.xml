@@ -345,7 +345,7 @@
  </transition>
  <transition transition_id="submit" title="Submit" new_state="pending" trigger="USER" before_script="" after_script="">
   <description>Share item with other registered users</description>
-  <action url="%(content_url)s/content_status_modify?workflow_action=submit" category="workflow" icon="">Submit for Publishing</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=submit" category="workflow" icon="">Submit for Approval</action>
   <guard>
    <guard-role>Owner</guard-role>
    <guard-role>Site Administrator</guard-role>
