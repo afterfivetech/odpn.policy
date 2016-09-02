@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="Products.CMFPlone.interfaces.ISecuritySchema"
+           prefix="plone">
+    <value key="use_email_as_login">True</value>
+    <value key="enable_self_reg">True</value>
+  </records>
+</registry>
