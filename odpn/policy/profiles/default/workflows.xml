@@ -9,5 +9,8 @@
     <type type_id="odpn.profile.registration">
       <bound-workflow workflow_id="odpn_membership"/>
     </type>
+    <type type_id="odpn.profile.events">
+      <bound-workflow workflow_id="odpn_events"/>
+    </type>
  </bindings>
 </object>
