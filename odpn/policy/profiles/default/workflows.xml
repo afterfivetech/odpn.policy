@@ -11,7 +11,7 @@
     <type type_id="odpn.profile.registration">
       <bound-workflow workflow_id="odpn_event_registration"/>
     </type>
-    <type type_id="odpn.profile.events">
+    <type type_id="odpn.profile.odpnevent">
       <bound-workflow workflow_id="odpn_events"/>
     </type>
     <type type_id="odpn.profile.membership">
