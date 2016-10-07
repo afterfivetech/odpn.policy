@@ -10,7 +10,7 @@
  <permission>Copy or Move</permission>
  <permission>Modify view template</permission>
  <permission>Delete objects</permission>
- <state state_id="submitted" title="Draft">
+ <state state_id="submitted" title="Submitted">
   <description>Can only be seen and edited by the owner.</description>
   <exit-transition transition_id="confirm"/>
   <exit-transition transition_id="decline"/>
