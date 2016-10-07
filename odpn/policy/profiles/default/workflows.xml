@@ -2,6 +2,7 @@
 <object name="portal_workflow" meta_type="Plone Workflow Tool">
   <object name="odpn_intranet" meta_type="Workflow"/>
   <object name="odpn_membership" meta_type="Workflow"/>
+  <object name="odpn_events" meta_type="Workflow"/>
   <object name="odpn_event_registration" meta_type="Workflow"/>	
   <bindings>
     <default>
