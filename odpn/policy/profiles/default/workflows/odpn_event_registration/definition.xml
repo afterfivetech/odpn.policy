@@ -62,6 +62,7 @@
    <permission-role>Owner</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>Site Administrator</permission-role>
+   <permission-role>Anonymous</permission-role>
   </permission-map>
  </state>
  <state state_id="confirmed" title="Confirmed">
@@ -112,7 +113,6 @@
    <permission-role>Reader</permission-role>
    <permission-role>Reviewer</permission-role>
    <permission-role>Site Administrator</permission-role>
-   <permission-role>Anonymous</permission-role>
   </permission-map>
  </state>
  <state state_id="attended" title="Attended">
