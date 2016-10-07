@@ -7,10 +7,13 @@
       <bound-workflow workflow_id="odpn_intranet"/>
     </default>
     <type type_id="odpn.profile.registration">
-      <bound-workflow workflow_id="odpn_membership"/>
+      <bound-workflow workflow_id="odpn_event_registration"/>
     </type>
     <type type_id="odpn.profile.events">
       <bound-workflow workflow_id="odpn_events"/>
+    </type>
+    <type type_id="odpn.profile.membership">
+      <bound-workflow workflow_id="odpn_membership"/>
     </type>
  </bindings>
 </object>
