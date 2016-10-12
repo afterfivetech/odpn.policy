@@ -20,7 +20,8 @@
      {{ context.absolute_url() }}     
      
      -------------------------
-     ODPN Portal</property>
+     ODPN Portal
+     http://www.odpn.com</property>
     <property name="recipients">{{ context.question_creator }}</property>
     <property
        name="subject">New ODPN Event Registration</property>
