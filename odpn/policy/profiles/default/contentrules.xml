@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<contentrules>
+ <rule name="rule-1" title="Notify Event Creator for New Registrations"
+    cascading="False" description="" enabled="True"
+    event="zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    stop-after="False">
+  <conditions/>
+  <actions/>
+ </rule>
+ <rule name="rule-2" title="Owner Registration Notification" cascading="False"
+    description="" enabled="True"
+    event="zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    stop-after="False">
+  <conditions>
+   <condition type="plone.conditions.PortalType">
+    <property name="check_types">
+     <element>odpn.profile.registration</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Mail">
+    <property name="source"/>
+    <property name="message">Congratulations!
+     
+     We have received your request to attend the ${parent_title} Event, We will review your request and confirm your reservation soon.
+     
+     Thank you!
+     
+     ---------------
+     ODPN Portal
+     http;//www.odpn.com</property>
+    <property
+       name="subject">Congratulations! Your registration has been submitted</property>
+    <property name="recipients">${user_email}</property>
+    <property name="exclude_actor">False</property>
+   </action>
+  </actions>
+ </rule>
+ <assignment name="rule-1" bubbles="True" enabled="True" location="/events"/>
+ <assignment name="rule-2" bubbles="True" enabled="True" location="/events"/>
+</contentrules>
