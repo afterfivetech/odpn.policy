@@ -4,8 +4,31 @@
     cascading="False" description="" enabled="True"
     event="zope.lifecycleevent.interfaces.IObjectAddedEvent"
     stop-after="False">
-  <conditions/>
-  <actions/>
+  <conditions>
+   <condition type="plone.conditions.PortalType">
+    <property name="check_types">
+     <element>odpn.profile.registration</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Mail">
+    <property name="source"/>
+    <property name="message">Good Day!
+     
+     A new registration has been added on your event. To see registration details, please visit:
+     ${absolute_url}
+     
+     Thank you!
+     
+     ---------
+     ODPN Portal
+     http://www.odpn.com</property>
+    <property name="subject">ODPN Event: New Registration</property>
+    <property name="recipients">${owner_emails}</property>
+    <property name="exclude_actor">False</property>
+   </action>
+  </actions>
  </rule>
  <rule name="rule-2" title="Owner Registration Notification" cascading="False"
     description="" enabled="True"
@@ -29,7 +52,7 @@
      
      ---------------
      ODPN Portal
-     http;//www.odpn.com</property>
+     http://www.odpn.com</property>
     <property
        name="subject">Congratulations! Your registration has been submitted</property>
     <property name="recipients">${user_email}</property>
