@@ -55,7 +55,7 @@
      http://www.odpn.com</property>
     <property
        name="subject">Congratulations! Your registration has been submitted</property>
-    <property name="recipients">${context/email_address}</property>
+    <property name="recipients">${email_address}</property>
     <property name="exclude_actor">False</property>
    </action>
   </actions>
